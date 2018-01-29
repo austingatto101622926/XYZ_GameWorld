@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XYZ_GameWorldLibrary", "XYZ_GameWorldLibrary\XYZ_GameWorldLibrary.csproj", "{AE279AB1-0B71-4964-9408-216263023A69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE279AB1-0B71-4964-9408-216263023A69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE279AB1-0B71-4964-9408-216263023A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE279AB1-0B71-4964-9408-216263023A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE279AB1-0B71-4964-9408-216263023A69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC620E26-DEAF-4B2E-B437-C08882794202}
+	EndGlobalSection
+EndGlobal
