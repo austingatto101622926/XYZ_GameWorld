@@ -13,7 +13,8 @@ namespace ConsoleApp
         {
             Orientation Orient = new Orientation();
 
-            Orient.TurnClockwiseAsIfFacing(Compass.Direction.Down, 2);
+            WriteRelativeDirections(Orient);
+            Orient.TurnClockwiseAsIfFacing(Orient.Bearing[Orientation.RelativeDir.Left], -2);
             WriteRelativeDirections(Orient);
 
             Console.ReadLine();
@@ -22,10 +23,10 @@ namespace ConsoleApp
         public static void WriteRelativeDirections(Orientation orientation)
         {
             Console.WriteLine("Foward: {0}, Right: {1}, Back: {2}, Left: {3}"
-                , orientation.Facing[Orientation.RelativeDir.Foward]
-                , orientation.Facing[Orientation.RelativeDir.Right]
-                , orientation.Facing[Orientation.RelativeDir.Back]
-                , orientation.Facing[Orientation.RelativeDir.Left]
+                , orientation.Bearing[Orientation.RelativeDir.Foward]
+                , orientation.Bearing[Orientation.RelativeDir.Right]
+                , orientation.Bearing[Orientation.RelativeDir.Back]
+                , orientation.Bearing[Orientation.RelativeDir.Left]
             );
         }
     }

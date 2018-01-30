@@ -18,7 +18,7 @@ namespace XYZ_GameWorldLibrary
             Below
         };
 
-        public Dictionary<RelativeDir, Compass.Direction> Facing { get; private set; } = new Dictionary<RelativeDir, Compass.Direction>
+        public Dictionary<RelativeDir, Compass.Direction> Bearing { get; private set; } = new Dictionary<RelativeDir, Compass.Direction>
         {
             { RelativeDir.Foward, Compass.Direction.North },
             { RelativeDir.Right,  Compass.Direction.East },
@@ -75,10 +75,10 @@ namespace XYZ_GameWorldLibrary
             //Store the current indexes of the changing directions
             int[] vIndex = new int[]
             {
-                Facing.Values.ToList().IndexOf(Dir[0]),
-                Facing.Values.ToList().IndexOf(Dir[1]),
-                Facing.Values.ToList().IndexOf(Dir[2]),
-                Facing.Values.ToList().IndexOf(Dir[3])
+                Bearing.Values.ToList().IndexOf(Dir[0]),
+                Bearing.Values.ToList().IndexOf(Dir[1]),
+                Bearing.Values.ToList().IndexOf(Dir[2]),
+                Bearing.Values.ToList().IndexOf(Dir[3])
             };
             //Handle quarterCounts greater than 4
             quarterCount = quarterCount % 4;
@@ -89,7 +89,7 @@ namespace XYZ_GameWorldLibrary
                 if (newDir >= 4) newDir -= 4;
                 if (newDir <= -1) newDir += 4;
                 //change the dictionary value from its current direction to its new direction
-                Facing[(RelativeDir)vIndex[i]] = Dir[newDir];
+                Bearing[(RelativeDir)vIndex[i]] = Dir[newDir];
             }
         }
     }
