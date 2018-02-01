@@ -28,7 +28,7 @@ namespace XYZ_GameWorldLibrary
             { RelativeDir.Below,  Compass.Direction.Down },
         };
 
-        public void TurnClockwiseAsIfFacing(Compass.Direction facing, int quarterCount = 1)
+        public void RotateClockwiseFacing(Compass.Direction facing, int quarterCount = 1)
         {
             //Array of the directions that will be cycled
             Compass.Direction[] Dir = new Compass.Direction[4];
@@ -60,10 +60,10 @@ namespace XYZ_GameWorldLibrary
                     Dir[3] = Compass.Direction.South;
                     break;
                 case Compass.Direction.Up:
-                    Dir[0] = Compass.Direction.North;
-                    Dir[1] = Compass.Direction.West;
-                    Dir[2] = Compass.Direction.South;
-                    Dir[3] = Compass.Direction.East;
+                    Dir[0] = Compass.Direction.South;
+                    Dir[1] = Compass.Direction.East;
+                    Dir[2] = Compass.Direction.North;
+                    Dir[3] = Compass.Direction.West;
                     break;
                 case Compass.Direction.Down:
                     Dir[0] = Compass.Direction.North;

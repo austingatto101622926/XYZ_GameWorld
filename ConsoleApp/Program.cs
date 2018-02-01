@@ -13,7 +13,7 @@ namespace ConsoleApp
         {
             Orientation Orient = new Orientation();
 
-            Orient.TurnClockwiseAsIfFacing(Compass.Direction.Down, 2);
+            Orient.RotateClockwiseFacing(Compass.Direction.Down, 2);
             WriteRelativeDirections(Orient);
 
             Console.ReadLine();
